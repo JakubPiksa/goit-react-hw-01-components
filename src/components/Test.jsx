@@ -1,16 +1,16 @@
-export const App = () => {
-  return (
+export const Test = () => { 
+    return (
     <div
       style={{
-        height: '100vh',
+        height: '50vh',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
-        color: '#010101'
+        color: '#212121'
       }}
     >
-      React homework template test
+      Testowanko czy działa 
       
     </div>
   );
