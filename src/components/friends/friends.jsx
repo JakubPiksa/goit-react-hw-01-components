@@ -9,7 +9,7 @@ const getStatusClassName = (isOnline) => {
 export const FriendList = ({ friends }) => {
     const { avatar, name, id, isOnline } = friends;
     return (
-        <ul className={css.friendslist}>
+        <ul className={css.friendsList}>
             <li className={css.item} key={id}>
                 {/* isOnline */}
                 <span className={css.status}> 

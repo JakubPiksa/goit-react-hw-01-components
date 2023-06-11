@@ -18,7 +18,7 @@ export const Profile = ({
                     alt={username}
                     className={css.avatar}
                 />
-                <p className={css.Name}>Petra Marica</p>
+                <p className={css.name}>Petra Marica</p>
                 <p className={css.tag}>@{tag }</p>
                 <p className={css.location}>{location}</p>
             </div>
