@@ -8,15 +8,15 @@ import { FriendList } from './friends/friends.jsx';
 import { Statistics } from './data/data.jsx';
 import { TransactionHistory } from './transactions/transactions.jsx';
 
-export const App = () => {
+ function App() {
   return (
     <div>
-      <Profile {...user} />
-      <Statistics data={data} />
-      <FriendList friends={friends} />
-      <TransactionHistory transactions={transactions} />
-    </div>
+      <Profile />
+      <Statistics />
+      <FriendList />
+      <TransactionHistory/>
+   </div>
   );
-};
+}
 
 export default App;
