@@ -3,13 +3,14 @@ import css from './data.module.css';
 
 export const Statistics = ({ title, stats }) => {
   const getRandomColor = () => {
-     return `#${Math.floor(Math.random() * 16777215)
-    .toString(16)
-    .padStart(6, 0)}`;
-}
+    return `#${Math.floor(Math.random() * 16777215)
+      .toString(16)
+      .padStart(6, 0)}`;
+  };
     return (
     <section className={css.statistics}>
-      {title && <h2 className={css.title}>{title}</h2>}
+        {title && <h2 className={css.title}>{title}</h2>}
+        <h2 className={css.text}> UPLOAD STATS</h2>
       <ul className={css.stat_list}>
         {stats.map((stat, index) => (
           <li key={index} className={css.item} style={{ backgroundColor: getRandomColor() }}>

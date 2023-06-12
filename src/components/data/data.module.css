@@ -1,9 +1,13 @@
 .statistics {
-  border: 3px solid red;
+  background-color: white;
+  border-radius: 20px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 20px;
+  margin: 0 auto;
+  width: 70%;
+  box-shadow: 7px 8px 19px 1px rgba(66, 68, 90, 0.66);
 }
 
 .title {
@@ -11,11 +15,13 @@
 }
 
 .label {
-  border: 1px solid black;
+  font-weight: 600;
+  color: white;
 }
 
 .percentage {
-  border: 1px solid black;
+  font-weight: 600;
+  color: white;
 }
 
 .stat_list {
@@ -27,6 +33,15 @@
 }
 
 .item {
-  padding: 5px;
-  background-color: random;
+  border-radius: 20px;
+  padding: 7%;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  display: block;
 }

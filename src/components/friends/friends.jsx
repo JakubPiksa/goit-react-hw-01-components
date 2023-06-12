@@ -3,7 +3,7 @@ import css from './friends.module.css';
 
 
 const getStatusClassName = (isOnline) => {
-  return isOnline ? "online" : "offline";
+  return isOnline ? css.online : css.offline;
 };
 
 export const FriendList = ({ friends }) => {
@@ -22,7 +22,7 @@ export const FriendList = ({ friends }) => {
             <p className={css.name}>{name}</p>
           </li>
         );
-      })};
+      })}
     </ul>
   );
 };
