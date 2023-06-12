@@ -12,6 +12,7 @@ export const Profile = ({
     
     return (
         <div className={css.profile}>
+          
             <div className={css.description}>
                 <img
                     src={avatar}
@@ -22,7 +23,6 @@ export const Profile = ({
                 <p className={css.tag}>@{tag }</p>
                 <p className={css.location}>{location}</p>
             </div>
-
             <ul className={css.stats}>
                 <li>
                     <span className={css.label}>Followers</span>
@@ -37,6 +37,7 @@ export const Profile = ({
                     <span className={css.quantity}>{likes}</span>
                 </li>
             </ul>
+          
         </div>
     );
 };

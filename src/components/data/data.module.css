@@ -1,5 +1,9 @@
 .statistics {
-  border: 1px solid black;
+  border: 3px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
 }
 
 .title {
@@ -15,9 +19,14 @@
 }
 
 .stat_list {
-  border: 1px solid black;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .item {
-  border: 1px solid black;
+  padding: 5px;
+  background-color: random;
 }

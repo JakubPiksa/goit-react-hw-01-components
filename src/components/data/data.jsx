@@ -2,12 +2,17 @@ import PropTypes from 'prop-types';
 import css from './data.module.css';
 
 export const Statistics = ({ title, stats }) => {
+  const getRandomColor = () => {
+     return `#${Math.floor(Math.random() * 16777215)
+    .toString(16)
+    .padStart(6, 0)}`;
+}
     return (
     <section className={css.statistics}>
       {title && <h2 className={css.title}>{title}</h2>}
       <ul className={css.stat_list}>
         {stats.map((stat, index) => (
-          <li key={index} className={css.item}>
+          <li key={index} className={css.item} style={{ backgroundColor: getRandomColor() }}>
             <span className={css.label}>{stat.label}</span>
             <span className={css.percentage}>{stat.percentage}%</span>
           </li>

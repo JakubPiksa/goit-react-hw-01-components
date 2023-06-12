@@ -1,5 +1,11 @@
 .profile {
-  border: 1px solid black;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid blue;
+  box-shadow: 7px 8px 19px 1px rgba(66, 68, 90, 0.66);
 }
 
 .description {
@@ -24,4 +30,17 @@
 
 .quantity {
   border: 1px solid black;
+}
+
+.stats {
+  border: 1px solid orangered;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.stats span {
+  padding: 0 5px;
 }

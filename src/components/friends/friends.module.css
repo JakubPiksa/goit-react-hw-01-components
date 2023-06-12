@@ -1,11 +1,21 @@
 .friendsList {
-  border: 1px solid black;
+  border: 3px solid green;
+  margin: 20px;
 }
 
 .item {
-  border: 1px solid black;
+  border-radius: 50px;
+  display: flex;
+  padding: 3% 5%;
+  box-shadow: 7px 8px 19px 1px rgba(66, 68, 90, 0.66);
+  margin: 3% 5%;
 }
 
 .name {
-  border: 1px solid black;
+  font-size: 5vw;
+}
+
+.avatar {
+  width: 20%;
+  height: auto;
 }
