@@ -7,20 +7,25 @@ const getStatusClassName = (isOnline) => {
 };
 
 export const FriendList = ({ friends }) => {
-    const { avatar, name, id, isOnline } = friends;
-    return (
-        <ul className={css.friendsList}>
-            <li className={css.item} key={id}>
-                {/* isOnline */}
-                <span className={css.status}> 
-                 <span className={css.status + ' ' + getStatusClassName(isOnline)}></span>
-                </span>
-             <img src={avatar} alt={name} className={css.avatar} />
-             <p className={css.name}>{name}</p>
-            </li>
-        </ul>
-    )
-}
+  
+  return (
+    <ul className={css.friendsList}>
+      {friends.map(friends => {
+        const { avatar, name, id, isOnline } = friends;
+        return (
+          <li className={css.item} key={id}>
+            {/* isOnline */}
+            <span className={css.status}>
+              <span className={css.status + ' ' + getStatusClassName(isOnline)}></span>
+            </span>
+            <img src={avatar} alt={name} className={css.avatar} />
+            <p className={css.name}>{name}</p>
+          </li>
+        );
+      })};
+    </ul>
+  );
+};
 
 
 FriendList.propTypes = {
